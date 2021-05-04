@@ -12,55 +12,17 @@ namespace GenericsDemo
         {
             int[] inArray = { 1, 2, 3, 4, 5 };
             double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
-            char[] charArray = { 'H','E','L','L','O' };
+            char[] charArray = { 'H', 'E', 'L', 'L', 'O' };
 
-            Program.toPrint<int>(inArray);
-            Program.toPrint<double>(doubleArray);
-            Program.toPrint<char>(charArray);
-
-            //Program.toPrint(inArray);
-            //Program.toPrint(doubleArray);
-            //Program.toPrint(charArray);
-            Console.ReadLine();
-
+            PrintArray<int> printinArray = new PrintArray<int>(inArray);
+            printinArray.toPrint();
+            
+            PrintArray<double> printdoubleArray  = new PrintArray<double>(doubleArray);
+            printdoubleArray.toPrint();
+            
+            PrintArray<char> printcharArray = new PrintArray<char>(charArray);
+            printcharArray.toPrint();
+            
         }
-
-        public static void toPrint<T>(T[] inputArray)
-        {
-            foreach (var element in inputArray)
-            {
-                Console.WriteLine(element);
-            }
-            Console.WriteLine("-------------------");
-        }
-
-
-        //public static void toPrint(int[] inputArray)
-        //{
-        //    foreach (int element in inputArray)
-        //    {
-        //        Console.WriteLine(element);
-        //    }
-        //    Console.WriteLine("-------------------");
-        //}   
-        //public static void toPrint(double[] inputArray)
-        //{
-        //    foreach  (double element in inputArray)
-        //    {
-        //        Console.WriteLine(element);
-        //    }
-        //    Console.WriteLine("-------------------");
-        //}
-        
-        //public static void toPrint(char[] inputArray)
-        //{
-        //    foreach (char element in inputArray)
-        //    {
-        //        Console.WriteLine(element);
-        //    }
-        //    Console.WriteLine("---------------------");
-        //}
-
-
     }
 }
