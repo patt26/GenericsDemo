@@ -18,9 +18,6 @@ namespace GenericsDemo
             Program.toPrint<double>(doubleArray);
             Program.toPrint<char>(charArray);
 
-
-
-
             //Program.toPrint(inArray);
             //Program.toPrint(doubleArray);
             //Program.toPrint(charArray);
@@ -36,12 +33,6 @@ namespace GenericsDemo
             }
             Console.WriteLine("-------------------");
         }
-
-
-
-
-
-
 
 
         //public static void toPrint(int[] inputArray)
